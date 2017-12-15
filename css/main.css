@@ -13,11 +13,15 @@
 .textcenter{
     text-align: center;
 }
-
+.view-mobile {
+  display: block;
+}
+.view-desktop {
+  display: none;
+}
 .btn-lab{
 	color:black;
     display: block;
-    margin-top: 2.7em;
     font-weight: 900;
 	background-color:White;
 }
@@ -47,7 +51,6 @@ section{
 
 .box_app{
     background-color: #f7b617;
-    padding: 28px 105px 40px 42px;
     transform: translateY(62%);
     float: right;
 	
@@ -56,7 +59,9 @@ section{
 	line-height: 28px;
 }
 
-
+.box_app_mobile{
+	    padding: 28px 105px 40px 42px;
+}
 .logoblanco {
      height: 16px;
     margin-left: 20px;
@@ -65,11 +70,14 @@ section{
 .text-download {
     font-size: 18px;
 }
+
+.btn_app {
+    margin-top: 2.7em;
+}
 /* ---------------
 	Section2
 	------------ */
 	.iphone {
-    margin: 40px 0px;
 	margin: 40px 0px 30px 0px;
     border: 1px solid white;
 	padding: 40px;
@@ -146,6 +154,46 @@ footer ul{
 .icons  li {
     display: inline-block;
     margin: 5px;
+
+}	
+/* View Desktop */
+/* ***** Section1**** */
+
+.box_app_desktop {
+    width: 400px;
+    padding: 0px 25px 30px 25px;
 }
+	
+/* Section2**** */
+
+.box_iphone{
+	margin: 40px 0px 30px 0px;
+    border: 1px solid white;
+	padding: 40px;
+	height: 380px;
+}
+
+/* Section 3 */
+
+.boxc_desktop {
+    float: right;
+    width: 250px;
+}
+/*
+@media (min-width: 768px) {
+
+
+ @media (min-width: @screen-md-min) { */
+
+@media (min-width: 768px) {
+  .view-mobile {
+    display: none;
+  }
+  
+  .view-desktop {
+    display: block;
+  }
+}
+
 
 

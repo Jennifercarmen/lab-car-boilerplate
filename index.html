@@ -57,8 +57,8 @@
 
     <section class="box_one">
         <div class="box_app">
-
-            <h1 class="bold">Comienza a viajar</h1>
+			<div class="box_app_mobile view-mobile">
+            <h3 class="bold">Comienza a viajar</h1>
             <h1 class="inline bold">
                 con</h1>
             <figure class="inline">
@@ -67,9 +67,29 @@
             <button type="button" class="btn btn-lab">
                 <span class="text-download">Descarga el app</span>
             </button>
+			</div>
+			
+			<div class="box_app_desktop view-desktop">
+            <h3 class="bold">Disfruta del Viaje</h3>
+            <h3 class="bold">Eres dueño de tu tiempo</h3>
+			<h4 class="bold inline">Viaja con</h4>
+            <figure class="inline">
+                <img class="logoblanco" src="assets/images/logoBlanco.png" alt="logo-blanco">
+            </figure>
+            <button type="button" class="btn btn-lab">
+                REGÍSTRATE
+            </button>
+			<hr>
+			<button type="button" class="btn btn-lab">
+                Conviértete en conductor
+            </button>
+			</div>
         </div>
     </section>
     <section>
+	
+				<div class="view-mobile">
+
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 ">
@@ -77,22 +97,60 @@
                         <h3 class="textcenter bold">La nueva app</h3>
                         <div class="cel">
                             <figure>
-                                <img class="img-responsive img-iphone" src="assets/images/iPhone6Plus.PNG" alt="iphone">
+                                <img class="img-responsive" src="assets/images/iPhone6Plus.png" alt="iphone">
                             </figure>
                         </div>
                     </div>
-                </div>
+				</div>
+                
                 <div class="col-xs-12">
                     <p class="text-iphone bold">LLega a tu destino aún más rápido</p>
                 </div>
+				</div>
+				
+
             </div>
         </div>
+		
+		
+	<div class="view-desktop">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="box_iphone">
+					
+					                <div class="col-md-5">
+									 <div class="cel">
+                            <figure>
+                                <img class="img-responsive" src="assets/images/iPhone6Plus.PNG" alt="iphone">
+                            </figure>
+                        </div>
+									</div>
+                <div class="col-md-5">
+				<h4>Descarga la nueva app</h4>
+                <p>La version actualizada de LabCar esta llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+				<p>Con solo tocar un botón , un auto llega justo a tu ubicación, súbete y no te preocupes: tu conductor sabe exactamente
+                a donde ir ... </p>
+</div>
+                       
+                    </div>
+				</div>
+		
+				</div>
+				</div>
     </section>
     <section class="box_conductor">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="conduce">
+				 <div class="conduce view-mobile">
+                        <h4>Conduce cuando quieras
+                        </h4>
+                        <p>LabCar es una opción flexible para alcanzar tus metas financieras</p>
+                        <p>
+                            <button type="button" class="btn btn-warning btn-responsive">Conviertete en conductor</button>
+                        </p>
+                    </div>
+                    <div class="conduce boxc_desktop view-desktop">
                         <h4>Conduce cuando quieras
                         </h4>
                         <p>LabCar es una opción flexible para alcanzar tus metas financieras</p>
@@ -108,8 +166,8 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    <div class="tarifas-Labcar">
+			                    <div class="tarifas-Labcar">
+                <div class="col-xs-12 col-md-4 col-lg-4">
                         <h3>
                             Tarifas
                         </h3>
@@ -118,18 +176,21 @@
                             <figure class="consultas-img">
                                 <img src="assets/images/shape.png" alt="circle">
                             </figure>
-                            <p class="consultas-text">Insurgentes Centro, Cuauhtémoc, Ciudad de México </p>
+                            <p class="consultas-text view-mobile">Insurgentes Centro, Cuauhtémoc, Ciudad de México </p>
+						<p class="consultas-text view-desktop">Ingrese su punto de partida</p>
+
                         </div>
                         <div class="consultas">
                             <figure class="consultas-img">
                                 <img src="assets/images/shape2.png" alt="Shape2">
                             </figure>
-                            <p class="consultas-text">Carolina, Ciudad de los Deportes, Ciudad de México</p>
-
+                            <p class="consultas-text view-mobile">Carolina, Ciudad de los Deportes, Ciudad de México</p>
+							 <p class="consultas-text view-desktop">Ingrese su destino </p>
                         </div>
                         <button type="button" class="btn btn-lab center">¡Trazar Ruta!</button>
                     </div>
-                </div>
+					                <div class="col-xs-12 col-md-2 col-lg-2">
+</div>
                 <div class="col-xs-12 col-md-6 col-lg-6">
                     <div class="container-mapa">
 
@@ -139,6 +200,8 @@
                         </div>
                     </div>
                 </div>
+				                </div>
+
             </div>
         </div>
     </section>
@@ -150,14 +213,35 @@
                 <div class="col-xs-12">
 
                     <figure>
-                        <img src="assets/images/logoBlanco.PNG" class="img-responsive" alt="Logo Labcar">
+                        <img src="assets/images/logoBlanco.png" class="img-responsive" alt="Logo Labcar">
                     </figure>
                     <hr>
                 </div>
 
             </div>
             <div class="row">
-                <div class="col-xs-6">
+			 <div class="col-md-3 white view-desktop">
+                               
+              <ul class="icons">
+                        <li>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-apple" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+            </div>
+
+                <div class="col-xs-6 col-md-3 col-lg-3">
                     <ul>
                         <li>Viaja</li>
                         <li>Coduce</li>
@@ -169,7 +253,29 @@
 
                     </ul>
                 </div>
-                <div class="col-xs-6">
+				 <div class="col-md-3 col-lg-3 view-desktop">
+                <ul>
+                <li>Oportunidades</li>
+                <li>Nuestra historia</li>
+                <li>Api de LabCar</li>
+                <li>Eventos</li>
+                <li>Desarrolladores</li>
+                <li>Servicios</li>
+                <li>Laboratoria</li>
+                <li>Coders</li>
+                </ul>
+
+            </div>
+  <div class="col-md-3 col-lg-3 view-desktop">
+                <figure>
+                    <img src="assets/images/appstore.png" class="img-responsive" alt="AppStore">
+                </figure>
+                <figure>
+                    <img src="assets/images/enBadgeWebGeneric.png" class="img-responsive" alt="Google Play">
+                </figure>
+            </div>
+
+                <div class="col-xs-6 view-mobile">
 
                     <ul class="icons">
                         <li>
@@ -190,11 +296,11 @@
                     </ul>
 
                     <figure>
-                        <img src="assets/images/enBadgeWebGeneric.PNG" class="img-responsive" alt="Google Play">
+                        <img src="assets/images/enBadgeWebGeneric.png" class="img-responsive" alt="Google Play">
                     </figure>
 
                     <figure>
-                        <img src="assets/images/appstore.PNG" class="img-responsive" alt="AppStore">
+                        <img src="assets/images/appstore.png" class="img-responsive" alt="AppStore">
 
                     </figure>
                 </div>
