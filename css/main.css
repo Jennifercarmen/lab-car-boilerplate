@@ -1,106 +1,132 @@
 /* Clases Especificas */
-body{
-font-family: 'Raleway', sans-serif;
-        color: white;
 
+body {
+    font-family: 'Raleway', sans-serif;
 }
-section:nth-child(odd){
+
+section:nth-child(odd) {
     background-color: #f7b617;
 }
+
 form {
     margin: 0px 10px 20px;
 }
 
+section {
+    color: white;
+}
+
+
 /* Helpers */
 
-.center{
+.center {
     margin: 0 auto;
 }
-.inline{
-		display:inline;
 
+.inline {
+    display: inline;
 }
-.bold{
-	    font-weight: 600;
+
+.bold {
+    font-weight: 600;
 }
-.textcenter{
+
+.textcenter {
     text-align: center;
 }
+
 .left {
     padding-left: 0px;
 }
+
 .right {
     padding-right: 0px;
 }
-.center-y{
-		transform: translateY(70%);
+
+.center-y {
+    transform: translateY(70%);
 }
 
-.textuppercase{
-	text-transform:uppercase;
+.textuppercase {
+    text-transform: uppercase;
 }
 
 .view-mobile {
-  display: block;
+    display: block;
 }
+
 .view-desktop {
-  display: none;
+    display: none;
 }
+
 .input-group {
     margin-bottom: 15px;
 }
-.btn-default{
+
+.btn-default {
     display: block;
     font-weight: 900;
 }
 
 .btn-warning {
-  display:block;
-  margin-bottom: 12px;
+    display: block;
+    margin-bottom: 12px;
 }
 
-.orange{
-		background-color:#f7b617;
-}
-.btn-block{
-	    margin: 10px 0px;
+.orange {
+    background-color: #f7b617;
 }
 
-/* header */
-.navbar{
-	    margin-bottom: 0px; 
+.btn-block {
+    margin: 10px 0px;
 }
+
+
+/* Navigation */
+
+.navbar {
+    margin-bottom: 0px;
+}
+
 .logo {
     width: 100px;
-    margin-top: 10px;
 }
+
+a.navbar-brand {
+    margin-right: 35%;
+}
+
+
 /* section 1 */
 
 section:first-of-type {
     background-image: url(../assets/images/taxi.jpg);
     background-repeat: no-repeat;
-	background-position: center 93%;
+    background-position: center 93%;
     background-size: cover;
-	height: 540px;    
+    height: 540px;
 }
 
-.box_app{
-	padding:28px 0px 40px 25px;
+.box_app {
+    padding: 28px 0px 40px 25px;
     margin-left: 10px;
-	
 }
-.box_app h2{
-	    line-height: 22px;
-		font-size:25px;
+
+.box_app h2 {
+    line-height: 22px;
+    font-size: 25px;
 }
+
 .box_app button {
-	margin-top:20px;
+    margin-top: 20px;
 }
+
 .logoblanco {
-     height: 16px;
+    height: 16px;
     margin-left: 20px;
     margin-bottom: 10px;
 }
+
 .text-download {
     font-size: 15px;
 }
@@ -108,288 +134,318 @@ section:first-of-type {
 .btn_app {
     margin-top: 2.7em;
 }
+
+
 /* ---------------
 	Section2
 	------------ */
-	.iphone {
-	margin: 40px 0px 30px 0px;
+
+.iphone {
+    margin: 40px 0px 30px 0px;
     border: 1px solid white;
-	padding: 40px;
+    padding: 40px;
 }
+
 .cel {
     width: 53%;
     transform: translateX(20%);
 }
-.text-iphone{
-	font-size:18px;
+
+.text-iphone {
+    font-size: 18px;
 }
-.modal-gris{
+
+.modal-gris {
     background-color: #a9a9a9;
 }
+
 .btn-black {
     background-color: black;
     color: white;
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
-.btn-black:hover{
-	color:white;
+
+.btn-black:hover {
+    color: white;
 }
 
 
 /* ---------------
 	Section3
 	------------ */
-section:nth-of-type(3){
+
+section:nth-of-type(3) {
     height: 430px;
     background-image: url(../assets/images/conduce.jpg);
     background-repeat: no-repeat;
     background-position: center right;
     background-size: cover;
-}    
+}
+
 .box_info {
     margin: 90px 0px 0px 20px;
-	    font-size: 18px;
+    font-size: 18px;
 }
+
 .box_info button {
     font-size: 18px;
 }
-.box_sect3 {
-background: rgba(0, 0, 0, 0.5);
+
+.box_sectDrive {
+    background: rgba(0, 0, 0, 0.5);
     height: 430px;
-}	
-	/* ---------------
+}
+
+
+/* ---------------
 	Section4
 	------------ */
-	
-	.tarifas-Labcar {
-    padding: 50px 0px;
+
+.tarifas-Labcar {
+    padding: 50px 0px 0px;
 }
+
 .consultas {
     margin-bottom: 30px;
 }
-.container-tarifas{
-	margin-bottom:60px;
+
+.container-tarifas {
+    margin-bottom: 60px;
 }
 
-.input-text, .consultas-img{
+.input-text,
+.consultas-img {
     display: inline;
 }
 
-.input-text{
+.input-text {
     margin-left: 25px;
     font-size: 12px;
     border: 1px solid white;
     border-radius: 10px;
     padding: 10px;
-    width: 230px;
-}
-.input-text:focus { 
-	outline:none;
-}
-.input-text::-moz-placeholder {
-    color: white;
-  }
-  .input-text:-ms-input-placeholder {
-    color: white;
-  }
-  .input-text::-webkit-input-placeholder {
-    color:white;
-  }
-  .tarifas-Labcar p{
-	margin-bottom:25px;
-}
-.container-mapa {
-	    padding: 10px;
-    border: 1px solid white;
-margin-bottom:60px;
-	
 }
 
-  /* Footer */
+.input-text:focus {
+    outline: none;
+}
+
+.input-text::-moz-placeholder {
+    color: white;
+}
+
+.input-text:-ms-input-placeholder {
+    color: white;
+}
+
+.input-text::-webkit-input-placeholder {
+    color: white;
+}
+
+.tarifas-Labcar p {
+    margin-bottom: 25px;
+}
+
+.tarifas-Labcar button {
+    padding: 6px 25px;
+}
+
+.container-mapa {
+    padding: 10px;
+    border: 1px solid white;
+    margin-bottom: 60px;
+}
+
+
+/* Footer */
+
 footer {
-	background-color:#2b2b2b;
-	padding-top: 47px;
-	padding-bottom: 47px;
-	color: white; 
+    background-color: #2b2b2b;
+    padding-top: 47px;
+    padding-bottom: 47px;
+    color: white;
 }
 
 footer figure {
     margin-bottom: 20px;
 }
-footer ul{
+
+footer ul {
     list-style: none;
     padding: 0;
-    margin:0;
+    margin: 0;
     line-height: 40px;
     overflow: auto;
-  }
-  
-.icons  li {
+}
+
+.icons li {
     display: inline-block;
     margin: 5px;
+}
 
-}	
+.images-footer img {
+    width: 90%;
+}
+
 
 /* Modales */
-/* Modal Login */
-.form-login {
-    width: 300px;
-	background-color:#f5f5f5;
-	padding: 20px 10px 10px;
-	border-radius: 5px;
+
+.modal-header {
+    border-bottom: 0px;
+    padding-bottom: 0px;
 }
 
-.modal-turquoise{
-	background-color:#08ac9d;
+.modal-body {
+    padding: 0px 15px 15px;
 }
+
+.close {
+    font-size: 30px;
+}
+/* Modal Login */
+
+.form-login {
+    width: 300px;
+    background-color: #f5f5f5;
+    padding: 20px 10px 10px;
+    border-radius: 5px;
+}
+
+.modal-turquoise {
+    background-color: #08ac9d;
+}
+
 .img-user {
     width: 140px;
 }
-.red{
-	color:#b73d43;
+
+.red {
+    color: #b73d43;
 }
+
+
 /* Modal Registro */
 
 .registro input.form-control {
     margin: 10px 0px 0px;
 }
-.text-marca{
+
+.text-marca {
     font-size: 13px;
     margin-bottom: 2px;
 }
-/* ******* */
 
-.modal-header {
-    border-bottom: 0px;
-	padding-bottom: 0px;
-}
-.modal-body {
-    padding: 0px 15px 15px;
-}
-.close {
-	font-size: 30px;
-}
 /* Form */
+
 .inputname {
     padding-right: 2px;
 }
+
 .inputlastname {
     padding-left: 2px;
 }
 
+
 /* @media querys */
 
 @media (min-width: 768px) {
-	/* Section1 */
-	
-	section:first-of-type {
-	height: 630px;  
-}
-	.center-y{
-		transform: translateY(50%);
-	}
-/* ***** Section1**** */
-.box_app{
-padding-right: 45px;
-padding-left:0px;
-}
-.box_app h1 {
-	line-height: 28px;
-}
-.bg{
-	background:none;
-}
-.box_app h3{
- line-height: 8px;
-}
-.textandlogo {
-    margin: 30px 0px 8px;
-}
-
-.box_app hr::after {
-    font-size: 1em;
-    position: relative;
-    top: -16px;
-    display: inline-block;
-    padding: 5px 40px;
-    content: 'o bien';
-    left: 100px;
-    background-color: #f7b617;
-}
-.box_app hr {
-    overflow: visible;
-	margin: 30px 0px 30px;
-}
-/* Section2**** */
-
-.box_iphone{
-	margin: 40px 0px 30px 0px;
-    border: 1px solid white;
-	padding: 40px;
-	height: 340px;
-}
-.box_iphone  p {
- font-size: 16.5px;
-}
-
-/* Section 3 */
-
-
-.box_registro{
-			transform: translateY(70%);
-
-}
-/* Section 4 */
-
-.consultas {
-    margin-bottom: 20px;
-}
-
-/* Footer */
-.icons{
-	transform: translateY(580%);
-}
-.images-footer {
-    transform: translateY(215px);
-}
-.images-footer img{
-	width:45%;
-}
-/* ****** */
-  .view-mobile {
-    display: none;
-  }
-  
-  .view-desktop {
-    display: block;
-  }
-  
-  
-  .modal-sm {
-    width: 480px;
-}
-.modal-lg{
-    width: 480px;
-}
+    /* Navigation */
+    a.navbar-brand {
+        margin-right: 0px;
+    }
+    /* Section1 */
+    section:first-of-type {
+        height: 630px;
+    }
+    .center-y {
+        transform: translateY(50%);
+    }
+    /* ***** Section1**** */
+    .box_app {
+        padding-right: 45px;
+        padding-left: 0px;
+    }
+    .box_app h1 {
+        line-height: 28px;
+    }
+    .bg {
+        background: none;
+    }
+    .box_app h3 {
+        line-height: 8px;
+    }
+    .textandlogo {
+        margin: 30px 0px 8px;
+    }
+    .box_app hr::after {
+        font-size: 1em;
+        position: relative;
+        top: -16px;
+        display: inline-block;
+        padding: 5px 40px;
+        content: 'o bien';
+        left: 100px;
+        background-color: #f7b617;
+    }
+    .box_app hr {
+        overflow: visible;
+        margin: 30px 0px 30px;
+    }
+    /* Section2**** */
+    .box_iphone {
+        margin: 40px 0px 30px 0px;
+        border: 1px solid white;
+        padding: 40px;
+        height: 340px;
+    }
+    .box_iphone p {
+        font-size: 16.5px;
+    }
+    /* Section 3 */
+    .box_registro {
+        transform: translateY(70%);
+    }
+    /* Section 4 */
+    .consultas {
+        margin-bottom: 20px;
+    }
+    /* Footer */
+    .icons {
+        transform: translateY(580%);
+    }
+    .images-footer {
+        transform: translateY(215px);
+    }
+    .images-footer img {
+        width: 55%;
+    }
+    /* ****** */
+    .view-mobile {
+        display: none;
+    }
+    .view-desktop {
+        display: block;
+    }
+    .modal-sm {
+        width: 480px;
+    }
+    .modal-lg {
+        width: 480px;
+    }
 }
 
-@media screen and (min-width: 480px) and (max-width:768px){
-
-    .box_app h2{
-		
-		font-size: 36px;
-	}
-	.box_app button {
-	margin-top:30px;
+@media screen and (min-width: 480px) and (max-width:768px) {
+    .box_app h2 {
+        font-size: 36px;
+    }
+    .box_app button {
+        margin-top: 30px;
+    }
+    .text-download {
+        font-size: 18px;
+    }
+    .box_app {
+        padding: 30px 0px 50px 25px;
+        margin-left: 10px;
+    }
 }
-	.text-download {
-    font-size: 18px;
-}
-.box_app{
-	padding: 30px 0px 50px 25px;
-    margin-left: 10px;
-}
-}
-
-
-
