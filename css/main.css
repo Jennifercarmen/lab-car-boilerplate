@@ -1,3 +1,16 @@
+/* Clases Especificas */
+body{
+font-family: 'Raleway', sans-serif;
+        color: white;
+
+}
+section:nth-child(odd){
+    background-color: #f7b617;
+}
+form {
+    margin: 0px 10px 20px;
+}
+
 /* Helpers */
 
 .center{
@@ -16,6 +29,13 @@
 .left {
     padding-left: 0px;
 }
+.right {
+    padding-right: 0px;
+}
+.center-y{
+		transform: translateY(70%);
+}
+
 .textuppercase{
 	text-transform:uppercase;
 }
@@ -29,57 +49,52 @@
 .input-group {
     margin-bottom: 15px;
 }
-.btn-lab{
-	color:black;
+.btn-default{
     display: block;
     font-weight: 900;
-	background-color:White;
 }
-
 
 .btn-warning {
   display:block;
   margin-bottom: 12px;
 }
-/* Clases Especificas */
-body{
-font-family: 'Raleway', sans-serif;
-    
+
+.orange{
+		background-color:#f7b617;
 }
-section{
-    background-color: #f7b617;
-    color: white;
-}
-form {
-    margin: 0px 10px 20px;
+.btn-block{
+	    margin: 10px 0px;
 }
 
 /* header */
 .navbar{
 	    margin-bottom: 0px; 
 }
+.logo {
+    width: 100px;
+    margin-top: 10px;
+}
 /* section 1 */
 
-.box_one{
+section:first-of-type {
     background-image: url(../assets/images/taxi.jpg);
     background-repeat: no-repeat;
-    background-position: center bottom;
+	background-position: center 93%;
     background-size: cover;
 	height: 540px;    
 }
 
 .box_app{
-    background-color: #f7b617;
-    transform: translateY(62%);
-    float: right;
+	padding:28px 0px 40px 25px;
+    margin-left: 10px;
 	
 }
-.box_app h1 {
-	line-height: 28px;
+.box_app h2{
+	    line-height: 22px;
+		font-size:25px;
 }
-
-.box_app_mobile{
-	    padding: 28px 105px 40px 42px;
+.box_app button {
+	margin-top:20px;
 }
 .logoblanco {
      height: 16px;
@@ -87,7 +102,7 @@ form {
     margin-bottom: 10px;
 }
 .text-download {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .btn_app {
@@ -102,7 +117,7 @@ form {
 	padding: 40px;
 }
 .cel {
-    width: 71%;
+    width: 53%;
     transform: translateX(20%);
 }
 .text-iphone{
@@ -120,29 +135,28 @@ form {
 	color:white;
 }
 
-/* Form */
-.inputname {
-    padding-right: 2px;
-}
-.inputlastname {
-    padding-left: 2px;
-}
+
 /* ---------------
 	Section3
 	------------ */
-	.box_conductor{
+section:nth-of-type(3){
     height: 430px;
     background-image: url(../assets/images/conduce.jpg);
     background-repeat: no-repeat;
     background-position: center right;
     background-size: cover;
-	  filter:brightness(0.5);
-
-}
-.conduce {
+}    
+.box_info {
     margin: 90px 0px 0px 20px;
+	    font-size: 18px;
 }
-
+.box_info button {
+    font-size: 18px;
+}
+.box_sect3 {
+background: rgba(0, 0, 0, 0.5);
+    height: 430px;
+}	
 	/* ---------------
 	Section4
 	------------ */
@@ -151,19 +165,38 @@ form {
     padding: 50px 0px;
 }
 .consultas {
-    margin-bottom: 20px;
-	
+    margin-bottom: 30px;
 }
-.consultas-text, .consultas-img{
+.container-tarifas{
+	margin-bottom:60px;
+}
+
+.input-text, .consultas-img{
     display: inline;
 }
 
-.consultas-text{
-    margin-left: 10px;
-    font-size: 11px;
+.input-text{
+    margin-left: 25px;
+    font-size: 12px;
     border: 1px solid white;
     border-radius: 10px;
     padding: 10px;
+    width: 230px;
+}
+.input-text:focus { 
+	outline:none;
+}
+.input-text::-moz-placeholder {
+    color: white;
+  }
+  .input-text:-ms-input-placeholder {
+    color: white;
+  }
+  .input-text::-webkit-input-placeholder {
+    color:white;
+  }
+  .tarifas-Labcar p{
+	margin-bottom:25px;
 }
 .container-mapa {
 	    padding: 10px;
@@ -196,37 +229,8 @@ footer ul{
     margin: 5px;
 
 }	
-/* View Desktop */
-/* ***** Section1**** */
 
-.box_app_desktop {
-    width: 400px;
-    padding: 0px 25px 30px 25px;
-}
-	
-/* Section2**** */
-
-.box_iphone{
-	margin: 40px 0px 30px 0px;
-    border: 1px solid white;
-	padding: 40px;
-	height: 380px;
-}
-
-/* Section 3 */
-
-.boxc_desktop {
-    float: right;
-    width: 250px;
-}
-/*
-@media (min-width: 768px) {
-
-
- @media (min-width: @screen-md-min) {
-
-
-Modales */
+/* Modales */
 /* Modal Login */
 .form-login {
     width: 300px;
@@ -265,16 +269,93 @@ Modales */
 .close {
 	font-size: 30px;
 }
-.btn-block{
-	    margin: 10px 0px;
+/* Form */
+.inputname {
+    padding-right: 2px;
 }
+.inputlastname {
+    padding-left: 2px;
+}
+
+/* @media querys */
+
 @media (min-width: 768px) {
-	.modal-sm {
-    width: 480px;
+	/* Section1 */
+	
+	section:first-of-type {
+	height: 630px;  
 }
-.modal-lg{
-    width: 480px;
+	.center-y{
+		transform: translateY(50%);
+	}
+/* ***** Section1**** */
+.box_app{
+padding-right: 45px;
+padding-left:0px;
 }
+.box_app h1 {
+	line-height: 28px;
+}
+.bg{
+	background:none;
+}
+.box_app h3{
+ line-height: 8px;
+}
+.textandlogo {
+    margin: 30px 0px 8px;
+}
+
+.box_app hr::after {
+    font-size: 1em;
+    position: relative;
+    top: -16px;
+    display: inline-block;
+    padding: 5px 40px;
+    content: 'o bien';
+    left: 100px;
+    background-color: #f7b617;
+}
+.box_app hr {
+    overflow: visible;
+	margin: 30px 0px 30px;
+}
+/* Section2**** */
+
+.box_iphone{
+	margin: 40px 0px 30px 0px;
+    border: 1px solid white;
+	padding: 40px;
+	height: 340px;
+}
+.box_iphone  p {
+ font-size: 16.5px;
+}
+
+/* Section 3 */
+
+
+.box_registro{
+			transform: translateY(70%);
+
+}
+/* Section 4 */
+
+.consultas {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.icons{
+	transform: translateY(580%);
+}
+.images-footer {
+    transform: translateY(215px);
+}
+.images-footer img{
+	width:45%;
+}
+/* ****** */
   .view-mobile {
     display: none;
   }
@@ -282,6 +363,32 @@ Modales */
   .view-desktop {
     display: block;
   }
+  
+  
+  .modal-sm {
+    width: 480px;
+}
+.modal-lg{
+    width: 480px;
+}
+}
+
+@media screen and (min-width: 480px) and (max-width:768px){
+
+    .box_app h2{
+		
+		font-size: 36px;
+	}
+	.box_app button {
+	margin-top:30px;
+}
+	.text-download {
+    font-size: 18px;
+}
+.box_app{
+	padding: 30px 0px 50px 25px;
+    margin-left: 10px;
+}
 }
 
 
