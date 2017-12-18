@@ -155,20 +155,6 @@ section:first-of-type {
     font-size: 18px;
 }
 
-.modal-gris {
-    background-color: #a9a9a9;
-}
-
-.btn-black {
-    background-color: black;
-    color: white;
-    margin-bottom: 10px;
-}
-
-.btn-black:hover {
-    color: white;
-}
-
 
 /* ---------------
 	Section3
@@ -302,6 +288,8 @@ footer ul {
 .close {
     font-size: 30px;
 }
+
+
 /* Modal Login */
 
 .form-login {
@@ -335,6 +323,21 @@ footer ul {
     margin-bottom: 2px;
 }
 
+.modal-gris {
+    background-color: #a9a9a9;
+}
+
+.btn-black {
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.btn-black:hover {
+    color: white;
+}
+
+
 /* Form */
 
 .inputname {
@@ -360,7 +363,6 @@ footer ul {
     .center-y {
         transform: translateY(50%);
     }
-    /* ***** Section1**** */
     .box_app {
         padding-right: 45px;
         padding-left: 0px;
